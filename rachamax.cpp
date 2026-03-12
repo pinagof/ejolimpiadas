@@ -1,20 +1,21 @@
 #include <iostream>
+#include <string>
+#include <vector>
+#include <sstream>
 using namespace std;
-void pbn(){
-    int n;
-    cout << "Cuantas pruebas me vas a dar ";
-    cin >> n;
-    int vl[n];
-    for(int i=0; i<n; i++){
-        cout << "Dame los valores de la prueba " << i+1 << ": ";
-        cin >> vl[i];
-    }
-   
-}
+
 
 int main(){
-    pbn();
-    return 0;
+    int n;
+    string temp;
+    vector<string> rachas;
+    vector<int> vl;
+    cout << "dime las rachas a analizar ";
+    cin >> n;
+    while(cin.peek()=='\n'){cin.ignore();}
+    for (int i=0;i<n;i++){
+        getline(cin,temp);
+        rachas.push_back(temp);
+    }
 
-    
 }
