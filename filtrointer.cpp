@@ -19,7 +19,7 @@ int main(){
         istringstream ss(rachas[i]);
         vl.clear();
         while(ss >> a){vl.push_back(a);}
-        resul = op(vl, vl.size());
+        resul = operacion(vl, vl.size());
         cout << resul << "\n";
     }
 }
@@ -34,7 +34,7 @@ int datos(int n, vector<string> &rachas, vector<int> &vl){
     return 0;
 }
 
-string op(vector<int> &vl, int lg){
+string operacion(vector<int> &vl, int lg){
     if (lg<1){return "No";}
     int mj=vl[0];
     int sum=vl[0];
