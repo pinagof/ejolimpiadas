@@ -5,7 +5,7 @@
 using namespace std;
 
 int datos(int n, vector<string> &rachas, vector<int> &vl);
-string op(vector<int> &vl, int lg);
+string operacion(vector<int> &vl, int lg);
 
 int main(){
     int n, a;
