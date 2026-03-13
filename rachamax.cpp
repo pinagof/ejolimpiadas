@@ -21,7 +21,7 @@ int main(){
     while(ss >> a){vl.push_back(a);}
     if(vl.size()>0){
         resultado=racha(vl,vl.size());
-        cout <<"" << resultado <<"";
+        cout <<"" << resultado <<" ";
         }else{cout<< "0";}
     }
 }
