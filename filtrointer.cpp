@@ -36,12 +36,15 @@ int main(){
     return 0;
 }
 
-int suma(vector<int> &vl, int lg){
+int datos(vector<int> &vl, int lg){
     if (lg<1){return 0;}
     int mj=vl[0];
     int sum=vl[0];
     for (int j=0; j<lg; j++){
+        sum=0;
         for(int i=j; i<lg; i++){
+            sum+=vl[i];
+            if (sum==0){return "Si"}
 
 
         }
