@@ -9,8 +9,8 @@ string operacion(vector<int> &vl, int lg);
 
 int main(){
     int n, a;
-    string temp, resul;
-    vector<string> rachas;
+    string temp, resul;  //string para guardar los resultados
+    vector<string> rachas;  //vector<string> para guardar las rachas como linea ded texto
     vector<int> vl;
     cout << "dime las rachas a analizar ";
     cin >> n;
@@ -24,7 +24,7 @@ int main(){
     }
 }
 
-int datos(int n, vector<string> &rachas, vector<int> &vl){
+int datos(int n, vector<string> &rachas, vector<int> &vl){ //int poerque devuelve un numero
     string temp; 
     while(cin.peek()=='\n'){cin.ignore();}
     for (int i=0;i<n;i++){
@@ -34,7 +34,7 @@ int datos(int n, vector<string> &rachas, vector<int> &vl){
     return 0;
 }
 
-string operacion(vector<int> &vl, int lg){
+string operacion(vector<int> &vl, int lg){ //estoy usndo string porque no devuelvo un numero si no un texto que es ("Si" o "No")
     if (lg<1){return "No";}
     int mj=vl[0];
     int sum=vl[0];
