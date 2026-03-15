@@ -47,9 +47,9 @@ int racha(vector<int> &vl, int largo){
         else{
             sum+=vl[i];
         }
-    }
     if(sum>mr){
         mr=sum;
+     }
     }
     return mr; 
 }
